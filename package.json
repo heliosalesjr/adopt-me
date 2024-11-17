@@ -3,16 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"src/**/*.{js, jsx, ts, tsx}\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src/**/*.{js, jsx, ts, tsx} --quiet"
+   "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "prettier": "^3.3.3"
+    "@vitejs/plugin-react": "^4.3.3",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.11"
   },
   "devDependencies": {
     "eslint": "^9.15.0"
